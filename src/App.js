@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import {Header} from "./components/Header";
 
 const players = [
   {name: 'LDK', score: 30, id: 1},
@@ -8,17 +9,7 @@ const players = [
   {name: 'PARK', score: 60, id: 4},
 ];
 
-const Header = (props) => {
-  console.log(props);
-  // destruct assignment
-  const {title, totalPlayers} = props;
-  return (
-    <header>
-      <h1>{title}</h1>
-      <span className='stats'>Players: {totalPlayers}</span>
-    </header>
-  );
-}
+
 
 const Player = (props) => (
   <div className='player'>
